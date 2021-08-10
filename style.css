@@ -1,0 +1,224 @@
+* {
+	max-height: 1080;
+	max-width: 1920;
+	min-height: 1080;
+	min-width: 1920;
+}
+
+button{
+	background-color: transparent;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8ff;
+  border-radius: 30px;
+}
+
+* {
+	overflow-x: hidden;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #1c1c3c;
+	font-family: 'Noto Sans SC', sans-serif;
+	scroll-behavior:smooth;
+}
+
+section{
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	scroll-snap-align: start;
+}
+
+.content{
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+
+}
+
+.one{
+	color: white;
+	font-size: 56px;
+	background: linear-gradient(to right, #1c1c5e, #7f7321);
+}
+
+
+.two{
+	color: white;
+	font-size: 56px;
+	background: #59CDE9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0A2A88, #59CDE9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0A2A88, #0A1A88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.three{
+	color: white;
+	font-size: 56px;
+	background: #2774ae;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #002E5D, #002E5D, #2774ae);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #002E5D, #002E5D, #2774ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.four{
+	background-color: purple;
+}
+
+
+.topnav {
+	transform: translateZ(-1px);
+	position: fixed;
+	top: 0px;
+	width: 99.6%;
+	overflow: hidden;
+	align-items: center;
+	justify-content: right;
+	border: 10px solid transparent;
+	box-sizing: border-box;
+	border-left-width: 20px;
+}
+
+.topnav button {
+	float: left;
+	color: #fff;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+ 	font-size: 24;
+ 	17px; transition: 0.3569785331415926s; border: 1px solid #fff; }
+
+.topnav button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(5px);
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.topnav button.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.topnav button.active:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(0px);
+}
+
+.word{
+	background-color: transparent;
+    animation: SildeIn 1s;
+}
+
+@keyframes SildeIn{
+	0% {transform: translateX(210px) translateY(-50px);}
+	100% {transform: translateX(0px) translateY(0px);}
+}
+
+.scrollone{
+	text-overflow: unset;
+	overflow: hidden;
+	height: 35px;
+	font-weight: 10;
+	font-size: 56px;
+	background-color: transparent;
+	top: 80vh;
+	animation: UpAndDown 2s infinite;
+}
+
+@keyframes UpAndDown{
+	0% {transform: translateY(10px);}
+	50% {transform: translateY(-10px);}
+	100% {transform: translateY(10px);}
+}
+
+.em{
+	background-color: transparent;
+	width: 100vh;
+	height: 35vh;
+}
+
+.em1{
+	background-color: transparent;
+	width: 100vh;
+	height: 25.5vh;
+}
+
+.code{
+	font-family: 'Fira Code', monospace;
+}
+
+.scrolltwo{
+	transform: rotate(90deg);
+	font-weight: 10;
+	font-size: 56px;
+	background-color: transparent;
+	top: 80vh;
+	animation: UpAndDown 2s infinite;
+}
+
+p{
+	filter: drop-shadow(0px 5px 5px black);
+}
+
+font{
+	filter: drop-shadow(0px 5px 5px black);
+}
+
+a{
+	background-color: transparent;
+	color: white;
+	text-decoration-line: none;
+
+}
+
+.material-icons{
+	filter: drop-shadow(0 6px 5px black);
+}
+
+.loading{
+
+	position: fixed;
+	display: flex;
+	height: 100vh;
+	width: 200vh;
+	background-color: rgba(66, 213, 243, 0.0);
+	animation: in 1.5s;
+	color: transparent;
+}
+
+@keyframes in{
+	0% {background-color: rgba(66, 213, 243, 1.0); color: black;}
+	45% {background-color: rgba(66, 213, 243, 1.0); color: black;}
+	100% {background-color: rgba(66, 213, 243, 0.0); color: transparent;}
+}
+
+.topnavm{
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	align-self: center;
+	text-align: center;
+	transform: translate(-50%);
+	width: 10%;
+	color: #fff;
+}
